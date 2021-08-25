@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>steam</id>
-    <version>3.0.1.20190215</version>
+    <id>steam-client</id>
+    <version>2.10.91.91</version>
     <title>Steam</title>
     <authors>Valve Corporation</authors>
-    <owners>Brian Mengo, Mike Cole</owners>
+    <owners>Mike Cole</owners>
     <licenseUrl>http://store.steampowered.com/subscriber_agreement/</licenseUrl>
     <projectUrl>http://store.steampowered.com/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/mikecole/chocolatey-packages/master/icons/steam.png</iconUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/mikecole/chocolatey-packages/master/icons/steam-client.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
     Steam is a digital distribution platform developed by Valve Corporation for purchasing and playing video games. Steam offers digital rights management, matchmaking servers, video streaming, and social networking services.
@@ -17,7 +17,7 @@
     <summary>Steam Client by Valve Corporation</summary>
     <releaseNotes />
     <copyright>Copyright Valve Corporation</copyright>
-    <tags>steam games gaming admin</tags>
+    <tags>steam games gaming</tags>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages/</packageSourceUrl>
     <bugTrackerUrl>https://help.steampowered.com/en/</bugTrackerUrl>
     <dependencies>

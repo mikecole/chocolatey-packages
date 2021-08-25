@@ -14,16 +14,16 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     Write-Host $notes_url
 
-    $notes_content = Invoke-WebRequest -Uri $notes_url
+    $notes_content = Invoke-WebRequest -Uri $notes_url -UseBasicParsing
 
     $html = New-Object -Com "HTMLFile"
     $html.IHTMLDocument2_write($notes_content.content)
-    $link = $html.getElementsByTagName("a") | where {$_.innerText -like "*Download SSDT for Visual Studio 2017*"}
+    $link = $html.getElementsByTagName("a") | Where-Object {$_.innerText -like "*Download SSDT for Visual Studio 2017*"}
 
     Write-Host $link.href
 
 	$temp_file = $env:TEMP + '\SSDTSetup.exe'
-	Invoke-WebRequest $link.href -OutFile $temp_file
+	Invoke-WebRequest $link.href -OutFile $temp_file -UseBasicParsing
 	Write-Host $temp_file
 
 	$version = (Get-Command $temp_file).Version

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>meinberg-ntp</id>
-        <version>4.2.8.0</version>
+        <version>4.2.8.15</version>
         <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
         <title>Meinberg NTP</title>
         <authors>MEINBERG Radio Clocks</authors>
@@ -10,7 +10,7 @@
         <licenseUrl>https://www.meinbergglobal.com/english/sw/readme-ntpinstaller.htm#legal</licenseUrl>
         <projectUrl>https://www.meinbergglobal.com/english/sw/ntp.htm</projectUrl>
         <copyright>Meinberg Funkuhren GmbH Co KG. All rights reserved.</copyright>
-        <iconUrl>http://cdn.rawgit.com/mikecole/chocolatey-packages/master/icons/meinberg-ntp.webp</iconUrl>
+        <iconUrl>http://cdn.rawgit.com/mikecole/chocolatey-packages/master/icons/meinberg-ntp.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Meinberg’s family of LANTIME NTP time servers offers flexible high performance, with proven reliability and advanced security features. With full IPv4 / IPv6 support validated in NTP time synchronization as well as the configuration interfaces (Web-based, SSH and SNMP), LANTIME time servers are designed to be deployed in networks of any size and industry. Users can assign several IP addresses and the system’s IP autoconf feature supports automatic configuration.
 

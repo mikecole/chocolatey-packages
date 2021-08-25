@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>zoom-client</id>
-    <version>5.1.0.0</version>
+    <version>5.1.0.1</version>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
     <owners>Mike Cole</owners>
     <title>[Deprecated] Zoom Client for Meetings</title>
@@ -16,7 +16,6 @@
       This version is deprecated. Please use **zoom** package.
     </description>
     <summary>Zoom unifies cloud video conferencing, simple online meetings, group messaging, and a software-defined conference room solution into one easy-to-use platform.</summary>
-    <iconUrl>https://cdn.staticaly.com/gh/mikecole/chocolatey-packages/master/icons/zoom.png</iconUrl>
     <docsUrl>https://support.zoom.us/hc/en-us</docsUrl>
     <licenseUrl>http://zoom.us/pricing</licenseUrl>
     <bugTrackerUrl>https://support.zoom.us/hc/en-us/requests/new</bugTrackerUrl>

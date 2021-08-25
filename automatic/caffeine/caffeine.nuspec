@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>caffeine</id>
-    <version>1.80.0.0</version>
+    <version>1.97.0.20210517</version>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
     <title>Caffeine</title>
     <authors>Tom Revell, Zhorn Software</authors>
@@ -19,7 +19,7 @@
     <docsUrl>http://www.zhornsoftware.co.uk/caffeine/</docsUrl>
     <bugTrackerUrl>http://zhornsoftware.forumotion.com/f4-support</bugTrackerUrl>
     <dependencies>
-      <dependency id="vcredist2008" version="9.0.30729.6161" />
+      <dependency id="vcredist2008" version="9.0.30729.616104" />
     </dependencies>
   </metadata>
   <files>

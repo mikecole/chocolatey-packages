@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$url = 'http://go.microsoft.com/fwlink/?LinkId=708343'
+$release_url = 'https://github.com/microsoft/AzureStorageExplorer/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -12,16 +12,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $temp_file = $env:TEMP + '\StorageExplorer.exe'
-    Invoke-WebRequest $url -OutFile $temp_file
-    Write-Host $temp_file
+    $download_page = Invoke-WebRequest -Uri $release_url -UseBasicParsing
 
-    $version = ([version](dir $temp_file).VersionInfo.ProductVersion)
-    Write-Host $version
+    $re = '\.exe$'
+    $url = $download_page.Links | Where-Object href -match $re | Select-Object -first 1 -expand href | ForEach-Object { 'https://github.com' + $_ }
 
+    $url_prefix = 'https://github.com/microsoft/AzureStorageExplorer/releases/download/v'
+    $url_suffix = '/Windows_StorageExplorer.exe'
+    $version32 = $url.ToLower().Replace($url_prefix.ToLower(), "").Replace($url_suffix.ToLower(), "")
 
-    $Latest = @{ URL = $url; Version = $version }
-    return $Latest
+    @{
+        URL = $url
+        Version = $version32
+    }
 }
 
 update -NoCheckUrl -ChecksumFor 32

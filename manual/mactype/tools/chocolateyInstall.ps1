@@ -1,5 +1,5 @@
-$checksum = 'DF5E528205E9B293993371A4F347148E42B85C5F0472A8ED5930B9E84C4A6619'
-$url = 'https://github.com/snowie2000/mactype/releases/download/2019.1-beta6/MacTypeInstaller_2019.1-beta6.exe'
+$checksum = '3A73D19D4940B6308D07F1EB19A9B6DB007423F3D2EBBA1216F2DF224A8B01F5'
+$url = 'https://github.com/snowie2000/mactype/releases/download/2021.1-rc1/MacTypeInstaller_2021.1-rc1.exe'
 
 $packageArgs = @{
   packageName   = 'mactype'

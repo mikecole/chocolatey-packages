@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName    = 'sublimetext2'
   unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

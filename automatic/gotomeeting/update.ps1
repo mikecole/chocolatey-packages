@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$download_url = 'https://link.gotomeeting.com/minimum-build-msi'
+$download_url = 'https://link.gotomeeting.com/latest-msi'
 
 function global:au_SearchReplace {
     @{

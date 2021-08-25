@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $tempDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
@@ -8,7 +9,7 @@ $packageArgs = @{
   silentArgs    = "/Q /T:$tempDir"
   validExitCodes= @(0)
   softwareName  = 'directx*'
-  checksum      = '8746EE1A84A083A90E37899D71D50D5C7C015E69688A466AA80447F011780C0D'
+  checksum      = '053F76DCBB28802E23341B6A787E3B0791C0FA5C8D4D011B1044172DBF89C73B'
   checksumType  = 'sha256'
 }
 

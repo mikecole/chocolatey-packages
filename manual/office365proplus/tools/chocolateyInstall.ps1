@@ -47,8 +47,8 @@ else
 $packageArgs                = @{
     packageName             = 'Office365DeploymentTool'
     fileType                = 'exe'
-    url                     = 'https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_12130-20272.exe'
-    checksum                = 'E94CA0062ED610CDED2399E22AD2CAB6377989CB0744CEED1CF3500C9810C45D'
+    url                     = 'https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_13231-20368.exe'
+    checksum                = '0E82FC6EFA6DD418FE60430496781FEAA2FDF8525D907522D4E6B2A51972A80C'
     checksumType            = 'sha256'
     softwareName            = 'Microsoft Office 365 ProPlus*'
     silentArgs              = "/extract:`"$officetempfolder`" /log:`"$officetempfolder\OfficeInstall.log`" /quiet /norestart"
