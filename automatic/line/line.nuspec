@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>line</id>
-    <version>7.1.0.2585</version>
+    <version>7.2.0.2597</version>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
     <owners>Mike Cole</owners>
     <title>LINE</title>
