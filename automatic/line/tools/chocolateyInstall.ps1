@@ -1,13 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop'
+$checksum = 'f4804e5e7fec3d9fde088e3f0f0ff0540aa4f68ae59f151bf84a60dee1958efa'
+
 $packageArgs = @{
   packageName    = 'line'
   unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   fileType       = 'exe'
-  url            = 'http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe'
+  url            = 'https://desktop.line-scdn.net/win/new/LineInst.exe'
   silentArgs     = '/S'
   validExitCodes = @(0)
   softwareName   = 'Line*'
-  checksum       = 'EEDB00ED1BEF350F7F97513FB8336BC4092A3B3B9B16CD9F1DA2C42EA7709139'
+  checksum       = $checksum
   checksumType   = 'sha256'
 }
 
