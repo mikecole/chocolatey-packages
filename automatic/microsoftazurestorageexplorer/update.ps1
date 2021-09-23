@@ -18,8 +18,7 @@ function global:au_GetLatest {
     $url = $download_page.Links | Where-Object href -match $re | Select-Object -first 1 -expand href | ForEach-Object { 'https://github.com' + $_ }
 
     $url_prefix = 'https://github.com/microsoft/AzureStorageExplorer/releases/download/v'
-    $url_suffix = '/Windows_StorageExplorer.exe'
-    $version32 = $url.ToLower().Replace($url_prefix.ToLower(), "").Replace($url_suffix.ToLower(), "")
+    $version32 = $url.ToLower().Replace($url_prefix.ToLower(), "").Split('/')[0]
 
     @{
         URL = $url
