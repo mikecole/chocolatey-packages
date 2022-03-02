@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>microsoftazurestorageexplorer</id>
-    <version>1.22.1.20220127</version>
+    <version>1.23.0</version>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
     <owners>Mike Cole</owners>
     <title>Microsoft Azure Storage Explorer</title>
