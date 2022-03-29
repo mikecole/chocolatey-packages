@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum = '874788B45DFC043289BA05387E83F27B4A046004A88A4C5EE7C073187FF65B9D'
+$checksum = '3b616cb0beaacffb53884b5ba0453312d2577db598d2a877a3b251125fb281a1'
 
 Start-CheckandStop "Steam"
 
