@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum = '828402d416991585136beaf67bb348967462026bce0f07b6ee358a8b90bc03d6'
-$url = 'https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.24.1/Windows_StorageExplorer.exe'
+$checksum = 'ec5480c78210e2f2d3b7b03bd4922de99939be4d974e822d431f2dda033eda13'
+$url = 'https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.24.2/Windows_StorageExplorer.exe'
 
 $packageArgs = @{
   packageName    = 'microsoftazurestorageexplorer'
