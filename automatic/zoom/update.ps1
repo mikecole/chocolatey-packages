@@ -2,7 +2,7 @@
 import-module au
 
 $download_page_url = 'https://zoom.us/rest/download?os=win'
-$url_part1 = 'https://zoom.us/client/'
+$url_part1 = 'https://cdn.zoom.us/prod/'
 
 function global:au_SearchReplace {
     @{
@@ -26,7 +26,7 @@ function global:au_GetLatest {
      # Get Version
     $version = $payload.result.downloadVO.zoom.version
     $url32 = $url_part1 + $version + '/ZoomInstallerFull.msi'
-    $url64 = $url_part1 + $version + '/ZoomInstallerFull.msi?archType=x64'
+    $url64 = $url_part1 + $version + '/x64/ZoomInstallerFull.msi'
 
     $Latest = @{ URL32 = $url32; URL64=$url64; Version = $version }
     return $Latest
