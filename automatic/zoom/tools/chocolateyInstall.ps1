@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum = '1bf051d4da383a03951787029fa300110c22c02baab5115ebc9b80ca78f4c456'
-$checksum64 = '632191066cc908431c61f24b5ed241d53d86937ef3ef4e0a0619b7f7adf629d8'
+$checksum = '29dad30b1707f1e76c3b54af22c5f1f0c61e8bec65858683ebe6e5f28117a0f9'
+$checksum64 = '84f477f96a4932832c1874a778485aa615bd668bf016614902b80a2e80650be2'
 
-$url = 'https://cdn.zoom.us/prod/5.12.2.9281/ZoomInstallerFull.msi'
-$url64 = 'https://cdn.zoom.us/prod/5.12.2.9281/x64/ZoomInstallerFull.msi'
+$url = 'https://cdn.zoom.us/prod/5.12.3.9638/ZoomInstallerFull.msi'
+$url64 = 'https://cdn.zoom.us/prod/5.12.3.9638/x64/ZoomInstallerFull.msi'
 
 $packageArgs = @{
   packageName    = 'zoom-client'
