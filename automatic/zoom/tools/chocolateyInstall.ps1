@@ -6,7 +6,7 @@ $url = 'https://cdn.zoom.us/prod/5.12.8.10232/ZoomInstallerFull.msi'
 $url64 = 'https://cdn.zoom.us/prod/5.12.8.10232/x64/ZoomInstallerFull.msi'
 
 $packageArgs = @{
-  packageName    = 'zoom-client'
+  packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   fileType       = 'msi'
   url            = $url
