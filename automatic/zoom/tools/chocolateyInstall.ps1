@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum = '36b7bc22c4bab7063f230eb4cb4390f0c691de840632e3991cd94ae070f529e0'
-$checksum64 = 'b6e29e1672b18699fd7d38e21160fdf55f1ebfa6c04f36c5d6e35493fdfca6eb'
+$checksum = '6c335c872092051f4104630d99f11294548b46c82b365fbb82275945dc4d548c'
+$checksum64 = '4afd44dc697fafc57cbf6fc5788406dc50d26d2bdf11ea4a6d4a4fc98ebabcdf'
 
-$url = 'https://cdn.zoom.us/prod/5.13.3.11494/ZoomInstallerFull.msi'
-$url64 = 'https://cdn.zoom.us/prod/5.13.3.11494/x64/ZoomInstallerFull.msi'
+$url = 'https://cdn.zoom.us/prod/5.13.4.11835/ZoomInstallerFull.msi'
+$url64 = 'https://cdn.zoom.us/prod/5.13.4.11835/x64/ZoomInstallerFull.msi'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
