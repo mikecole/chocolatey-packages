@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$release_url = 'https://github.com/microsoft/AzureStorageExplorer/releases/latest'
+$latestRelease = 'https://api.github.com/repos/microsoft/AzureStorageExplorer/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -13,13 +13,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $release_url -UseBasicParsing
+    $windows_release = (Invoke-RestMethod $latestRelease).assets | Where-Object {$_.name -eq 'Windows_StorageExplorer.exe'}
 
-    $re = '\.exe$'
-    $url = $download_page.Links | Where-Object href -match $re | Select-Object -first 1 -expand href | ForEach-Object { 'https://github.com' + $_ }
-
-    $url_prefix = 'https://github.com/microsoft/AzureStorageExplorer/releases/download/v'
-    $version32 = $url.ToLower().Replace($url_prefix.ToLower(), "").Split('/')[0]
+    $url = $windows_release.browser_download_url
+    $version32 = $url.Replace("https://github.com/microsoft/AzureStorageExplorer/releases/download/", "").Replace("/Windows_StorageExplorer.exe", "")
 
     @{
         URL = $url
