@@ -1,6 +1,7 @@
+$ErrorActionPreference = 'Stop'
 import-module au
 
-$release_url = 'https://github.com/mRemoteNG/mRemoteNG/releases/latest'
+$latestRelease = 'https://api.github.com/repos/mRemoteNG/mRemoteNG/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -12,13 +13,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $release_url -UseBasicParsing
+    $windows_release = (Invoke-RestMethod $latestRelease).assets | Where-Object {$_.label -eq 'Normal Edition (msi)'}
 
-    $re = '\.msi$'
-    $url = $download_page.Links | ? href -match $re | select -first 1 -expand href | % { 'https://github.com' + $_ }
-
-    $version32 = $url.Substring($url.LastIndexOf("-") + 1).Replace(".msi", "")
-
+    $url = $windows_release.browser_download_url
+    $version32 = $windows_release.name.Replace("mRemoteNG-Installer-", "").Replace(".msi", "")
+    
     @{
         URL = $url
         Version = $version32
