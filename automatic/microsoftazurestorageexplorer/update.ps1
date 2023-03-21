@@ -13,10 +13,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $windows_release = (Invoke-RestMethod $latestRelease).assets | Where-Object {$_.name -eq 'Windows_StorageExplorer.exe'}
+    $file_name = 'StorageExplorer-windows-ia32.exe'
+    $windows_release = (Invoke-RestMethod $latestRelease).assets | Where-Object {$_.name -eq $file_name}
 
     $url = $windows_release.browser_download_url
-    $version32 = $url.Replace("https://github.com/microsoft/AzureStorageExplorer/releases/download/v", "").Replace("/Windows_StorageExplorer.exe", "")
+    $version32 = $url.Replace("https://github.com/microsoft/AzureStorageExplorer/releases/download/v", "").Replace("/$file_name", "")
 
     @{
         URL = $url
