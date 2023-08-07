@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum = '6fbc2953d7d68d0551096823e6838dd5eb1c7f3e13bded2a92dd6117d758543f'
+$checksum = 'd979e57f32b3aad412874afe2561f12c94d1b9f1227c4451cf2864d3a5be5942'
 
 $packageArgs = @{
   packageName    = 'line'
