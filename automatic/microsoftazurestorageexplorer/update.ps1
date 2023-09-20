@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $file_name = 'StorageExplorer-windows-ia32.exe'
+    $file_name = 'StorageExplorer-windows-x64.exe'
     $windows_release = (Invoke-RestMethod $latestRelease).assets | Where-Object {$_.name -eq $file_name}
 
     $url = $windows_release.browser_download_url
