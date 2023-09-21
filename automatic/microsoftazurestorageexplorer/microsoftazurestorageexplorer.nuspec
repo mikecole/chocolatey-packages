@@ -9,9 +9,9 @@
     <title>Microsoft Azure Storage Explorer</title>
     <authors>Microsoft</authors>
     <projectUrl>http://storageexplorer.com/</projectUrl>
-    <copyright>Copyright 2006 Microsoft</copyright>
+    <copyright>Copyright 2023 Microsoft</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>azure storage storageexplorer</tags>
+    <tags>azure microsoft storage explorer storageexplorer</tags>
     <summary>Easily work with Azure Storage - from any platform, anywhere.</summary>
     <description>Microsoft Azure Storage Explorer is a standalone app from Microsoft that allows you to easily work with Azure Storage data on Windows, macOS and Linux.</description>
     <iconUrl>https://cdn.staticaly.com/gh/mikecole/chocolatey-packages/master/icons/microsoftazurestorageexplorer.png</iconUrl>
