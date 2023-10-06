@@ -9,7 +9,7 @@
     <owners>Mike Cole</owners>
     <licenseUrl>http://store.steampowered.com/subscriber_agreement/</licenseUrl>
     <projectUrl>http://store.steampowered.com/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/mikecole/chocolatey-packages/master/icons/steam-client.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/mikecole/chocolatey-packages/master/icons/steam-client.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
     Steam is a digital distribution platform developed by Valve Corporation for purchasing and playing video games. Steam offers digital rights management, matchmaking servers, video streaming, and social networking services.

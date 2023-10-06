@@ -9,7 +9,7 @@
     <owners>Mike Cole</owners>
     <licenseUrl>https://www.ringcentral.com/legal/eulatos.html</licenseUrl>
     <projectUrl>https://www.ringcentral.com/teams/overview.html</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/mikecole/chocolatey-packages/master/icons/ringcentral-classic.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/mikecole/chocolatey-packages/master/icons/ringcentral-classic.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>**RingCentral Classic** gives you a more unified experience by allowing you to collaborate with your colleagues in one place, from anywhere and on any device. It is suitable for knowledge workers and for all Users alike, who want to maximize their productivity and minimize the number of open apps as they work.</description>
     <summary>Free team messaging, video meetings, task management, and more—together in one app.</summary>

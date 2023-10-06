@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DirectX is a collection of APIs for handling tasks related to games and videos.</description>
     <tags>microsoft directx games gaming opengl</tags>
-    <iconUrl>https://cdn.staticaly.com/gh/mikecole/chocolatey-packages/master/icons/Directx9.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/mikecole/chocolatey-packages/master/icons/Directx9.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" />
