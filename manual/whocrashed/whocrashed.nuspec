@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>whocrashed</id>
-    <version>7.0.1</version>
+    <version>7.0.6</version>
     <title>Who Crashed</title>
     <authors>Resplendence Software Projects Sp.</authors>
     <owners>cole.mike</owners>
