@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>zoom</id>
-    <version>5.16.6.24712</version>
+    <version>5.16.10.26186</version>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
     <owners>Mike Cole</owners>
     <title>Zoom Client for Meetings</title>
