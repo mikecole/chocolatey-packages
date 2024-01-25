@@ -37,4 +37,13 @@ $packageArgs = @{
   checksumType64 = 'sha256'
 }
 
-Install-ChocolateyPackage @packageArgs
+$ZoomPath = Join-Path -Path $Env:ProgramFiles -ChildPath 'Zoom\bin\Zoom.exe'
+
+[Version]$InstalledVersion = (Get-ItemProperty -Path $ZoomPath -ErrorAction:Ignore).VersionInfo.FileVersionRaw
+
+$UpdateNeeded = $InstalledVersion -lt [Version]$Env:ChocolateyPackageVersion
+
+if ($UpdateNeeded -or $Env:ChocolateyForce)
+{
+  Install-ChocolateyPackage @packageArgs
+}
