@@ -4,11 +4,11 @@ $packageArgs = @{
   packageName   = 'clipcache'
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   fileType      = 'exe'
-  url           = 'http://www.xrayz.co.uk/download/ccsetup.exe'
+  url           = 'https://www.xrayz.co.uk/download/ccsetup.exe'
   silentArgs    = '/VERYSILENT'
   validExitCodes= @(0)
   softwareName  = 'clipcache*'
-  checksum      = '424E0A11588AAAE19D5DA0BE287DDE3EB7032AB6398416CAB2974422DC2A9A04'
+  checksum      = 'fe8a2fd8cdadbddca9a48d75dcbb84df53cecd2c256019efaafce981f0704fb1'
   checksumType  = 'sha256'
 }
 
