@@ -20,8 +20,12 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
+    Write-Host "Checking download page: " + $download_page_url
+
     $response = Invoke-WebRequest -UseBasicParsing -Uri $download_page_url
     $payload = ConvertFrom-Json $response
+
+    Write-Host "Got response: " + $payload
 
      # Get Version
     $version = $payload.result.downloadVO.zoom.version
