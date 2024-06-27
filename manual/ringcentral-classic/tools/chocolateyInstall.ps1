@@ -8,7 +8,7 @@ $packageArgs = @{
   validExitCodes = @(0)
   softwareName   = 'RingCentral Classic*'
   url64bit       = 'https://app.ringcentral.com/download/RingCentral.exe?V=2012528645154747305'
-  checksum64     = '4b00b6b3845daa146315100a0645340862d8537e756ca701364086fc675474b6'
+  checksum64     = '7920cd0a4bfd172e0f460e4e22a9116fdf7789a4bca3ca07b99a669e3a4cd832'
   checksumType64 = 'sha256'
 }
 
