@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ringcentral-classic</id>
-    <version>24.2.280.10541</version>
+    <version>24.2.371.11103</version>
     <title>RingCentral Classic</title>
     <authors>RingCentral</authors>
     <owners>Mike Cole</owners>
