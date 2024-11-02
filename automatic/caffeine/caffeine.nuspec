@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>caffeine</id>
-    <version>1.97.0.20210517</version>
+    <version>1.98</version>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
     <title>Caffeine</title>
     <authors>Tom Revell, Zhorn Software</authors>
