@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum = '24d97bccad98b1a2fb3318e4e2442508f87e158622694b7b952661c6778c77a8'
-$checksum64 = '7190f74544e71ca223b05437dfb2abe0ecf7d8309ed9b881c995f5b9f810acba'
+$checksum = '1e8b621980741b31d6fb626e75effc23fa437698607b235c685a3c1a4ebb8d99'
+$checksum64 = 'bdb616ce7e2ccb6c7cded6ef72931c19b444a05d6882bd13f763e75f8fa0c9a0'
 
-$url = 'https://cdn.zoom.us/prod/6.5.9.11873/ZoomInstallerFull.msi'
-$url64 = 'https://cdn.zoom.us/prod/6.5.9.11873/x64/ZoomInstallerFull.msi'
+$url = 'https://cdn.zoom.us/prod/6.5.10.12704/ZoomInstallerFull.msi'
+$url64 = 'https://cdn.zoom.us/prod/6.5.10.12704/x64/ZoomInstallerFull.msi'
 
 $silentArgs = '/quiet /qn /norestart'
 
