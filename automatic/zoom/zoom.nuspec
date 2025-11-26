@@ -13,24 +13,24 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>zoom admin webinar webcam meeting</tags>
     <description>
-      Zoom unifies cloud video conferencing, simple online meetings, group messaging, and a software-defined conference room solution into one easy-to-use platform.
-      solution offers the best video, audio, and wireless screen-sharing experience across Windows, Mac, iOS, Android, Blackberry, Linux, Zoom Rooms, and H.323/SIP
-      room systems. Founded in 2011, Zoom's mission is to develop a people-centric cloud service that transforms the real-time collaboration experience and improves
-      the quality and effectiveness of communications forever.
+Zoom unifies cloud video conferencing, simple online meetings, group messaging, and a software-defined conference room solution into one easy-to-use platform.
+solution offers the best video, audio, and wireless screen-sharing experience across Windows, Mac, iOS, Android, Blackberry, Linux, Zoom Rooms, and H.323/SIP
+room systems. Founded in 2011, Zoom's mission is to develop a people-centric cloud service that transforms the real-time collaboration experience and improves
+the quality and effectiveness of communications forever.
 
-      ### Package Specific
-      #### Package Parameters
-      The following package parameters can be set:
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
 
-      * `/DisableRestartManager` - Wait until the in-progress meeting is over before installing
-      * `/NoAutoUpdate` - Remove the Check for Updates option in the client
-      * `/NoDesktopShortcut` - Prevent the creation of a desktop shortcut on install or update
-      * `/NoInstallIfRunning` - Abort installation if Zoom is running
-      * `/SilentStart` - Automatically start client in the system tray after reboot
-      * `/SSOHost:` - Set the SSO URL
+* `/DisableRestartManager` - Wait until the in-progress meeting is over before installing
+* `/NoAutoUpdate` - Remove the Check for Updates option in the client
+* `/NoDesktopShortcut` - Prevent the creation of a desktop shortcut on install or update
+* `/NoInstallIfRunning` - Abort installation if Zoom is running
+* `/SilentStart` - Automatically start client in the system tray after reboot
+* `/SSOHost:` - Set the SSO URL
 
-      To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-      To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
     </description>
     <summary>Zoom unifies cloud video conferencing, simple online meetings, group messaging, and a software-defined conference room solution into one easy-to-use platform.</summary>
     <iconUrl>https://cdn.statically.io/gh/mikecole/chocolatey-packages/master/icons/zoom.png</iconUrl>
