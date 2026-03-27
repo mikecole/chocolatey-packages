@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum = '95479d9358760ea88fa347a65d635760a67f0ebc2625750bc9eed35a8c229b48'
-$checksum64 = '5822dd53a5aea36e9b994ded5385bb9e2d9d40bf162d657ce7103cc1f7db957d'
+ß
+$checksum64 = 'd558408bb652dbe234d14e734759019da935e49fb9f4fa2bfadaa6804253d7fe'
 
-$url = 'https://cdn.zoom.us/prod/6.6.11.23272/ZoomInstallerFull.msi'
-$url64 = 'https://cdn.zoom.us/prod/6.6.11.23272/x64/ZoomInstallerFull.msi'
+
+$url64 = 'https://cdn.zoom.us/prod/7.0.0.33767/x64/ZoomInstallerFull.msi'
 
 $silentArgs = '/quiet /qn /norestart'
 
@@ -22,18 +22,19 @@ if ($pp['NoInstallIfRunning']) {
 if ($pp['SilentStart']) { $silentArgs += " zSilentStart=True" }
 if ($pp['SSOHost']) { $silentArgs += " zSSOHost=$(pp['SSOHost'])" }
 
+if (-not [Environment]::Is64BitOperatingSystem) {
+  throw "Zoom no longer supports 32-bit Windows. Last supported package version: 6.6.11.23272. Pin that version or migrate to a 64-bit OS."
+}
+
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   fileType       = 'msi'
-  url            = $url
   url64          = $url64
   silentArgs     = $silentArgs
   validExitCodes = @(0, 3010)
   softwareName   = 'zoom*'
-  checksum       = $checksum
   checksum64     = $checksum64
-  checksumType   = 'sha256'
   checksumType64 = 'sha256'
 }
 
