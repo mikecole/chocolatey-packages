@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>zoom</id>
-    <version>6.6.11.23272</version>
+    <version>7.0.0.33767</version>
     <packageSourceUrl>https://github.com/mikecole/chocolatey-packages</packageSourceUrl>
     <owners>Mike Cole</owners>
     <title>Zoom Client for Meetings</title>
@@ -19,6 +19,11 @@ room systems. Founded in 2011, Zoom's mission is to develop a people-centric clo
 the quality and effectiveness of communications forever.
 
 ### Package Specific
+#### Architecture Support
+* Zoom upstream no longer provides 32-bit Windows installers.
+* This package is x64-only.
+* Last package version that supports x86 is `6.6.11.23272`.
+
 #### Package Parameters
 The following package parameters can be set:
 
