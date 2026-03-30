@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-ß
+
 $checksum64 = '9e7476d9ddeb844a7717a88f2559dda37693772fdd72b39b7091a33b17343793'
 
 
